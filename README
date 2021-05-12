@@ -1,0 +1,33 @@
+/// TICTACTOE ///
+AUTHOR: Jonathan Rodriguez
+DATE: 26 February 2019
+
+/// DESCRIPTION ///
+CONGRATS!!! You have come across Jonathan Rodriguez's TICTACTOE game.  This
+game was programmed during the summer of 2018 while researching with the 
+wonderful Dr. Jory Denny.  This summer, I would teach myself -- with the 
+guidance of Dr. Jory -- C++, the language I would come to know and love.  The
+TICTACTOE game was a way for me to practice my skills during my free time. 
+While the game does work, a young Jonathan Rodriguez made some coding decisions
+that were not the most informed.   
+
+It is now Febuary 2019.  With some newly attained knowledge, I have decided to
+refactor my game.  Check out the progress!  
+
+/// UPDATES ///
+26 Febuary 2019: 
+-Initialization of both Git and GitHub repositories.  First commit and push 
+were made.  
+-Changed TextAnimation to TextAnimator, which is simply a refactored version 
+of TextAnimation.  TextAnimator does not contain a string object. The class now
+consists of the functions that prints with a desired animation.  Makefile also 
+updated to include TextAnimator and exclude TextAnimation.  
+
+7 May 2019:
+-TextAnimation removed from all classes.  
+-TextAnimation functions now take in const char* as a parameter. 
+-Code now compiles and runs successfully.
+
+7 May 2019:
+-TextAnimation functions use sleep_for function as opposed to a for loop.  
+SLOW_RATE and TITLE_RATE now represent time in milliseconds.   

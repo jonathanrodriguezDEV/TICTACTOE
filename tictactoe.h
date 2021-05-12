@@ -1,0 +1,60 @@
+///////////////////////////////////////////////////////////////////////////////
+/// @author Jonathan Rodriguez
+/// @date 7 May 2019
+/// @brief File contains definitions tictactoe game functions.
+///
+///////////////////////////////////////////////////////////////////////////////
+
+#ifndef TICTACTOE_H_
+#define TICTACTOE_H_
+
+#include "Grid.h"
+
+class tictactoe{
+  private:
+    Grid board; ///<Game board
+    int count;  ///<Counter for moves of the game
+
+  public:
+    ///////////////////////////////////////////////////////////////////////////
+    /// @brief Default Constructor
+    /// @param _text String to print as the title of the game.
+    ///
+    tictactoe();
+    
+    ///////////////////////////////////////////////////////////////////////////
+    /// @brief Ask players for move 
+    ///
+    void askMove();
+    
+    ///////////////////////////////////////////////////////////////////////////
+    /// @brief Reveals winner of the game
+    ///
+    void congratsWinner();
+
+    /////////////////////////////////////////////////////////////////////////// 
+    /// @brief Checks if a board is full
+    /// @return True if the board is full, false otherwise.
+    ///
+    bool boardFull();
+
+    ///////////////////////////////////////////////////////////////////////////
+    /// @brief Checks which move the game is on
+    /// @return Number of moves that have been made.
+    ///    
+    int getCount();
+
+    ///////////////////////////////////////////////////////////////////////////
+    /// @brief Reveals game is a tie
+    ///
+    void tie();
+
+    ///////////////////////////////////////////////////////////////////////////
+    /// @brief Checks if a player has won
+    /// @return True if there is a winner, false otherwise.
+    ///
+    bool winnerCheck();
+
+};
+
+#endif 
